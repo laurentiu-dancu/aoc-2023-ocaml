@@ -5,22 +5,18 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github laurentiu-dancu/aoc-2023-ocaml))
 
-(authors "Author Name")
+(authors "Laurentiu Dancu")
 
-(maintainers "Maintainer Name")
-
-(license LICENSE)
-
-(documentation https://url/to/documentation)
+(license sandia-mit)
 
 (package
  (name aoc_2023_ocaml)
- (synopsis "A short synopsis")
- (description "A longer description")
+ (synopsis "AoC 2023 in ocaml")
+ (description "Advent of Code 2023 for learning ocaml")
  (depends ocaml dune)
  (tags
-  (topics "to describe" your project)))
+  (aoc-2023)))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
