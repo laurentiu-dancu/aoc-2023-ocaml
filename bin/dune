@@ -1,4 +1,11 @@
 (executable
  (public_name d01)
  (name d01)
+ (modules d01)
+ (libraries aoc_utils))
+
+(executable
+ (public_name d01p2)
+ (name d01p2)
+ (modules d01p2)
  (libraries aoc_utils))

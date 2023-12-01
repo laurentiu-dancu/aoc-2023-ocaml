@@ -6,4 +6,3 @@ let read_lines name : string list =
     | Some s -> loop (s :: acc)
     | None -> close_in ic; List.rev acc in
   loop []
-  
