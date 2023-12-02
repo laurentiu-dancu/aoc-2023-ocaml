@@ -19,7 +19,7 @@ let is_digit c =
 let get_digit_first str =
   match String.length str with
   | 0 -> ""
-  | _ when is_digit (String.get str 0) -> String.make 1 (String.get str 0)
+  | _ when is_digit str.[0] -> String.make 1 str.[0]
   | _ -> map_string_digit str
 
 let rec extract_digits str =
@@ -33,10 +33,7 @@ let extract_valid_calibration_number line =
   if str_len < 1 then
     0
   else
-    int_of_string (
-      String.make 1 (String.get str 0) ^ 
-      String.make 1 (String.get str (str_len - 1))
-    )
+    int_of_string (String.make 1 str.[0] ^ String.make 1 str.[str_len - 1])
 
 let rec sum_valid_calibration_numbers lines =
   match lines with

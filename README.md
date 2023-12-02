@@ -21,6 +21,7 @@ How to run
 
 ```
 dune build
-dune exec bin/d01.exe
-dune exec bin/d01p2.exe
+dune exec d01
+dune exec d01p2
+dune exec d02
 ```
