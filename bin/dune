@@ -21,3 +21,9 @@
  (name d03)
  (modules d03)
  (libraries aoc_utils))
+
+(executable
+ (public_name d03p2)
+ (name d03p2)
+ (modules d03p2)
+ (libraries aoc_utils))
