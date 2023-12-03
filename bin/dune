@@ -10,9 +10,14 @@
  (modules d01p2)
  (libraries aoc_utils))
 
-
 (executable
  (public_name d02)
  (name d02)
  (modules d02)
+ (libraries aoc_utils))
+
+(executable
+ (public_name d03)
+ (name d03)
+ (modules d03)
  (libraries aoc_utils))

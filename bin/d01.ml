@@ -1,10 +1,7 @@
-let is_digit c = 
-  match c with
-  | '0' .. '9' -> true
-  | _ -> false
+open Aoc_utils
 
- let concat_if_digit acc c =
-  if is_digit c then
+let concat_if_digit acc c =
+  if Chars.is_digit c then
     acc ^ String.make 1 c
   else
     acc
@@ -27,8 +24,6 @@ let rec sum_valid_calibration_numbers lines =
   match lines with
    | [] -> 0
    | hd :: tl -> extract_valid_calibration_number hd + sum_valid_calibration_numbers tl
-
-open Aoc_utils
 
 let () =
   let file = "res/d01/input.txt" in

@@ -24,4 +24,5 @@ dune build
 dune exec d01
 dune exec d01p2
 dune exec d02
+dune exec d03
 ```
